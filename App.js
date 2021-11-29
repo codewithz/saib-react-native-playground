@@ -1,6 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Image, TouchableOpacity, Button, Alert } from 'react-native';
+import {
+  StyleSheet,
+  Text, View,
+  SafeAreaView,
+  Image, TouchableOpacity,
+  Button, Alert,
+  Platform, StatusBar
+
+} from 'react-native';
 
 export default function App() {
 
@@ -9,13 +17,17 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Button title="Click Me" onPress={() => {
 
         Alert.alert('My Title', 'My Message', [
           {
             text: 'Yes',
-            onPress: () => { console.log('Yes Clicked') }
+            onPress: () => {
+              console.log('Yes Clicked');
+              console.log('Platform:' + Platform.OS);
+              console.log('Status Bar Height:' + StatusBar.currentHeight);
+            }
           },
           {
             text: 'No',
@@ -24,7 +36,7 @@ export default function App() {
         ])
 
       }} />
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -32,8 +44,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    justifyContent: "center",
-    alignItems: "center"
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
+
 
   },
 });
