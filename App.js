@@ -6,7 +6,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text> Hello React Native</Text>
-      <Image source={require('./assets/icon2.png')} />
+      <Image source={{
+        uri: 'https://saib.com.sa/sites/default/files/logo.png',
+        width: 412,
+        height: 122
+
+      }} />
     </View>
   );
 }
