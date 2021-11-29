@@ -6,11 +6,14 @@ import {
   SafeAreaView,
   Image, TouchableOpacity,
   Button, Alert,
-  Platform, StatusBar
+  Platform, StatusBar,
+  Dimensions
 
 } from 'react-native';
 
 export default function App() {
+
+  console.log(Dimensions.get("screen"));
 
   const handlePress = () => {
     console.log('Button Pressed')
@@ -18,24 +21,11 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Button title="Click Me" onPress={() => {
-
-        Alert.alert('My Title', 'My Message', [
-          {
-            text: 'Yes',
-            onPress: () => {
-              console.log('Yes Clicked');
-              console.log('Platform:' + Platform.OS);
-              console.log('Status Bar Height:' + StatusBar.currentHeight);
-            }
-          },
-          {
-            text: 'No',
-            onPress: () => { console.log('No Pressed') }
-          }
-        ])
-
-      }} />
+      <View style={{
+        backgroundColor: 'dodgerblue',
+        width: '50%',
+        height: 70
+      }}></View>
     </SafeAreaView>
   );
 }
