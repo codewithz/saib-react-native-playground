@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Button color="orange" title="Click Me" onPress={handlePress} />
+      <Button title="Click Me" onPress={() => { alert('Hello Alert') }} />
     </View>
   );
 }
