@@ -20,14 +20,17 @@ export default function App() {
     <View style={{
       backgroundColor: '#eee',
       flex: 1,
-      flexDirection: 'row'
+      flexDirection: 'row', //column,row,column-reverse,row-reverse
+      justifyContent: 'space-evenly', //main axis
+      alignItems: 'center', //secondary
 
     }} >
 
       <View style={{
         backgroundColor: 'dodgerblue',
         width: 100,
-        height: 100,
+        height: 300,
+        alignSelf: 'flex-start'
       }} >
       </View>
 
