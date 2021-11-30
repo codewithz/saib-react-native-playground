@@ -27,36 +27,24 @@ export default function App() {
 
     }} >
 
-      <View style={{
-        backgroundColor: 'dodgerblue',
-        width: 100,
-        height: 100,
-        padding: 20,
-        paddingHorizontal: 10
-
-      }} >
-
-        <View
-          style={{
-            backgroundColor: 'gold',
-            width: 50,
-            height: 50
-          }}
-        >
-
-        </View>
-      </View>
-
-      <View
+      <Text
         style={{
-          backgroundColor: 'tomato',
-          width: 100,
-          height: 100,
-          margin: 20
-        }}
-      >
+          //  fontFamily: 'Roboto',
+          fontSize: 30,
+          fontStyle: 'italic',
+          fontWeight: '600',
+          color: 'purple',
+          textTransform: 'capitalize',
+          textDecorationLine: 'underline',
+          textAlign: 'center',
+          padding: 10,
+          lineHeight: 35,
 
-      </View>
+
+
+        }}
+
+      >I love React Native!!Tnis is my first REact Native APp!!Here some more text</Text>
 
 
 
