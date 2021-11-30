@@ -33,7 +33,12 @@ export default function App() {
         height: 100,
         borderWidth: 10,
         borderColor: 'royalblue',
-        borderRadius: 50
+        borderRadius: 50,
+        shadowColor: 'grey',
+        shadowOffset: { height: 10, width: 10 },
+        shadowOpacity: 1,
+
+        elevation: 20,
 
       }} >
       </View>
