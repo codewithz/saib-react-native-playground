@@ -23,16 +23,13 @@ export default function App() {
       flexDirection: 'row', //column,row,column-reverse,row-reverse
       justifyContent: 'center', //main axis
       alignItems: 'center', //secondary
-      alignContent: 'center',
-      flexWrap: "wrap",
+
 
     }} >
 
       <View style={{
         backgroundColor: 'dodgerblue',
-        flexBasis: 100,
-        flexGrow: 1,
-        //width: 100,
+        width: 100,
         height: 100,
 
       }} >
@@ -42,6 +39,9 @@ export default function App() {
         backgroundColor: 'gold',
         width: 100,
         height: 100,
+        top: 20,
+        left: 20,
+        position: 'absolute'
       }} >
       </View>
 
@@ -51,30 +51,7 @@ export default function App() {
         height: 100,
       }} >
       </View>
-      <View style={{
-        backgroundColor: 'grey',
-        width: 100,
-        height: 100,
-      }} >
-      </View>
-      <View style={{
-        backgroundColor: 'greenyellow',
-        width: 100,
-        height: 100,
-      }} >
-      </View>
-      <View style={{
-        backgroundColor: 'purple',
-        width: 100,
-        height: 100,
-      }} >
-      </View>
-      <View style={{
-        backgroundColor: 'orange',
-        width: 100,
-        height: 100,
-      }} >
-      </View>
+
 
 
     </View>
