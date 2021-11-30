@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 
 import { useDimensions, useDeviceOrientation } from "@react-native-community/hooks";
+import { MaterialIcons } from '@expo/vector-icons';
 
 export default function App() {
 
@@ -27,25 +28,7 @@ export default function App() {
 
     }} >
 
-      <Text
-        style={{
-          //  fontFamily: 'Roboto',
-          fontSize: 30,
-          fontStyle: 'italic',
-          fontWeight: '600',
-          color: 'purple',
-          textTransform: 'capitalize',
-          textDecorationLine: 'underline',
-          textAlign: 'center',
-          padding: 10,
-          lineHeight: 35,
-
-
-
-        }}
-
-      >I love React Native!!Tnis is my first REact Native APp!!Here some more text</Text>
-
+      <MaterialIcons name="mail" size={60} color="dodgerblue" />
 
 
 
